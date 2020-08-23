@@ -24,14 +24,14 @@ class App extends Component {
         <Switch>
           <Route exact strict path="/" component={Home}></Route>
           <Route exact strict path="/about" component={About} />
-          <Route exact strict path="/blog" component={Blog} />
-          <Route exact strict path="/cv" component={CV} />
-          <Route exact strict path="/erp" component={ERP} />
-          <Route exact strict path="/stream" component={Stream} />
-          <Route exact strict path="/travel" component={Travel} />
-          <Route exact strict path="/vr" component={VR} />
-          <Route exact strict path="/ecommerce" component={ECommerce} />
-          <Route exact strict path="/404" component={NotFound} />
+          <Route exact strict path="/app/blog" component={Blog} />
+          <Route exact strict path="/app/cv" component={CV} />
+          <Route exact strict path="/app/erp" component={ERP} />
+          <Route exact strict path="/app/stream" component={Stream} />
+          <Route exact strict path="/app/travel" component={Travel} />
+          <Route exact strict path="/app/vr" component={VR} />
+          <Route exact strict path="/app/ecommerce" component={ECommerce} />
+          <Route component={NotFound} />
         </Switch>
         <footer className="container hidden px-2 md:px-0 md:block text-center text-xs">
           Iconia Copyright 2020
