@@ -11,6 +11,7 @@ import ERP from "./components/pages/erp/index";
 import Stream from "./components/pages/stream/index";
 import Travel from "./components/pages/travel/index";
 import VR from "./components/pages/vr/index";
+import ECommerce from "./components/pages/ecommerce/index";
 import BottomNav from "./components/elements/shared/BottomNav";
 
 class App extends Component {
@@ -29,6 +30,7 @@ class App extends Component {
           <Route exact strict path="/stream" component={Stream} />
           <Route exact strict path="/travel" component={Travel} />
           <Route exact strict path="/vr" component={VR} />
+          <Route exact strict path="/ecommerce" component={ECommerce} />
           <Route exact strict path="/404" component={NotFound} />
         </Switch>
         <footer className="container hidden px-2 md:px-0 md:block text-center text-xs">

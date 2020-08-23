@@ -6,7 +6,7 @@ const BottomNav = () => {
         <li>Home</li>
         <li>About</li>
         <li>Link</li>
-        <li>Link2</li>
+        <li>Apps</li>
       </ul>
     </nav>
   );
