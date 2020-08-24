@@ -1,18 +1,8 @@
 import React, { Component } from "react";
-import { Switch, Route } from "react-router-dom";
 import "./assets/icons/fa";
 import Navbar from "./components/elements/shared/Navbar";
-import Home from "./components/pages/main/Home";
-import NotFound from "./components/pages/main/NotFound";
-import About from "./components/pages/main/About";
-import Blog from "./components/pages/blog/index";
-import CV from "./components/pages/cv/index";
-import ERP from "./components/pages/erp/index";
-import Stream from "./components/pages/stream/index";
-import Travel from "./components/pages/travel/index";
-import VR from "./components/pages/vr/index";
-import ECommerce from "./components/pages/ecommerce/index";
 import BottomNav from "./components/elements/shared/BottomNav";
+import routes from "./config/routes";
 
 class App extends Component {
   render() {
@@ -21,18 +11,7 @@ class App extends Component {
         <div className="bg-gray-800 text-gray-300">
           <Navbar></Navbar>
         </div>
-        <Switch>
-          <Route exact strict path="/" component={Home}></Route>
-          <Route exact strict path="/about" component={About} />
-          <Route exact strict path="/app/blog" component={Blog} />
-          <Route exact strict path="/app/cv" component={CV} />
-          <Route exact strict path="/app/erp" component={ERP} />
-          <Route exact strict path="/app/stream" component={Stream} />
-          <Route exact strict path="/app/travel" component={Travel} />
-          <Route exact strict path="/app/vr" component={VR} />
-          <Route exact strict path="/app/ecommerce" component={ECommerce} />
-          <Route component={NotFound} />
-        </Switch>
+        {routes}
         <footer className="container hidden px-2 md:px-0 md:block text-center text-xs">
           Iconia Copyright 2020
         </footer>

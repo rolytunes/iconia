@@ -40,7 +40,7 @@ const Navbar = () => {
                   <NavLink
                     exact
                     to="/app/cv"
-                    className="navbar__item rounded-t bg-white hover:bg-gray-200 py-2 px-4 block whitespace-no-wrap"
+                    className="bg-white hover:bg-gray-200 py-2 px-4 block whitespace-no-wrap"
                   >
                     CV
                   </NavLink>
@@ -49,7 +49,7 @@ const Navbar = () => {
                   <NavLink
                     exact
                     to="/app/vr"
-                    className="navbar__item bg-white hover:bg-gray-200 py-2 px-4 block whitespace-no-wrap"
+                    className="bg-white hover:bg-gray-200 py-2 px-4 block whitespace-no-wrap"
                   >
                     VR
                   </NavLink>
@@ -58,7 +58,7 @@ const Navbar = () => {
                   <NavLink
                     exact
                     to="/app/blog"
-                    className="navbar__item bg-white hover:bg-gray-200 py-2 px-4 block whitespace-no-wrap"
+                    className="bg-white hover:bg-gray-200 py-2 px-4 block whitespace-no-wrap"
                   >
                     Blog
                   </NavLink>
@@ -67,7 +67,7 @@ const Navbar = () => {
                   <NavLink
                     exact
                     to="/app/erp"
-                    className="navbar__item bg-white hover:bg-gray-200 py-2 px-4 block whitespace-no-wrap"
+                    className="bg-white hover:bg-gray-200 py-2 px-4 block whitespace-no-wrap"
                   >
                     ERP
                   </NavLink>
@@ -76,7 +76,7 @@ const Navbar = () => {
                   <NavLink
                     exact
                     to="/app/travel"
-                    className="navbar__item bg-white hover:bg-gray-200 py-2 px-4 block whitespace-no-wrap"
+                    className=" bg-white hover:bg-gray-200 py-2 px-4 block whitespace-no-wrap"
                   >
                     Travelr
                   </NavLink>
@@ -85,7 +85,7 @@ const Navbar = () => {
                   <NavLink
                     exact
                     to="/app/ecommerce"
-                    className="navbar__item bg-white hover:bg-gray-200 py-2 px-4 block whitespace-no-wrap"
+                    className="bg-white hover:bg-gray-200 py-2 px-4 block whitespace-no-wrap"
                   >
                     eCommerce
                   </NavLink>
@@ -94,7 +94,7 @@ const Navbar = () => {
                   <NavLink
                     exact
                     to="/app/stream"
-                    className="navbar__item rounded-b bg-white hover:bg-gray-200 py-2 px-4 block whitespace-no-wrap"
+                    className="bg-white hover:bg-gray-200 py-2 px-4 block whitespace-no-wrap"
                   >
                     Stream
                   </NavLink>
@@ -110,10 +110,33 @@ const Navbar = () => {
           </li>
         </ul>
       </nav>
-      <hr className="container border-gray-700"></hr>
-      <nav className="container flex flex-row py-1 px-3 md:px-0 justify-start text-sm">
-        <ul>
-          <li>SubItem</li>
+      <hr className="container border-gray-700 hidden"></hr>
+      <nav className="container flex flex-row py-1 px-3 md:px-0 justify-start text-sm hidden">
+        <ul className="inline-flex">
+          <li
+            class="no-underline text-teal-dark border-b-2 border-teal-dark uppercase tracking-wide text-xs py-2 mr-8"
+            href="#"
+          >
+            Subitem 1
+          </li>
+          <li
+            class="no-underline text-grey-dark border-b-2 border-transparent uppercase tracking-wide text-xs py-2 mr-8"
+            href="#"
+          >
+            Subitem 2
+          </li>
+          <li
+            class="no-underline text-grey-dark border-b-2 border-transparent uppercase tracking-wide text-xs py-2 mr-8"
+            href="#"
+          >
+            Subitem 3
+          </li>
+          <li
+            class="no-underline text-grey-dark border-b-2 border-transparent uppercase tracking-wide text-xs py-2"
+            href="#"
+          >
+            Subitem 4
+          </li>
         </ul>
       </nav>
     </>

@@ -8,14 +8,32 @@ body {
   @apply font-iconia;
 }
 
+*,
+*::after,
+*::before {
+  transition: all ease-in-out 100ms;
+}
+
 .navbar__item.active {
   @apply bg-gray-300 text-gray-800 py-1 px-2;
 }
 
-.dropdown:hover .dropdown-menu {
-  display: block;
-}
-
-.dropdown-menu .active {
-  @apply py-2 px-4;
+.dropdown:hover {
+  svg {
+    transform: rotate(180deg);
+  }
+  .dropdown-menu {
+    display: block;
+    & li {
+      &:first-of-type a {
+        @apply rounded-t;
+      }
+      &:last-of-type a {
+        @apply rounded-b;
+      }
+    }
+  }
+  .active {
+    @apply py-2 px-4;
+  }
 }
