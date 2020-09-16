@@ -1,15 +1,15 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
-import Home from "./../components/pages/main/Home";
-import NotFound from "./../components/pages/main/NotFound";
-import About from "./../components/pages/main/About";
-import Blog from "./../components/pages/blog/index";
-import CV from "./../components/pages/cv/index";
-import ERP from "./../components/pages/erp/index";
-import Stream from "./../components/pages/stream/index";
-import Travel from "./../components/pages/travel/index";
-import VR from "./../components/pages/vr/index";
-import ECommerce from "./../components/pages/ecommerce/index";
+import Home from "components/pages/main/Home";
+import NotFound from "components/pages/main/NotFound";
+import About from "components/pages/main/About";
+import Blog from "components/pages/blog/index";
+import CV from "components/pages/cv/index";
+import ERP from "components/pages/erp/index";
+import Stream from "components/pages/stream/index";
+import Travel from "components/pages/travel/index";
+import VR from "components/pages/vr/index";
+import ECommerce from "components/pages/ecommerce/index";
 
 export default (
   <Switch>

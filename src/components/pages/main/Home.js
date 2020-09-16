@@ -1,6 +1,7 @@
 import React from "react";
-import Icon from "../../base/Icon";
-import TilesContainer from "./../../elements/TilesContainer";
+import TilesContainer from "components/elements/TilesContainer";
+import { Button, Icon } from "components/base/index";
+import { Title } from "components/base/Typography/index";
 
 const Home = () => {
   return (
@@ -8,11 +9,13 @@ const Home = () => {
       <main className="container px-3 mt-3 md:px-0 flex-grow">
         <section className="tile__container">
           <header className="flex items-center mb-2">
-            <h2 className="flex-grow text-2xl">Apps</h2>
-            <ul>
+            <Title className="flex-grow text-2xl" level="2">
+              Apps
+            </Title>
+            <ul className="flex items-center">
               <li>
                 <a href="." className="py-1 pl-1">
-                  <Icon faIcon="question-circle" faSize="md"></Icon>
+                  <Icon faIcon="question-circle"></Icon>
                 </a>
               </li>
             </ul>

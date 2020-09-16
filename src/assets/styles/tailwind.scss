@@ -31,6 +31,9 @@ body {
       &:last-of-type a {
         @apply rounded-b;
       }
+      & .active {
+        @apply bg-gray-800 text-gray-300;
+      }
     }
   }
   .active {

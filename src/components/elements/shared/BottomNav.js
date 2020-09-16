@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
+import styled from "styled-components";
+
 const BottomNav = () => {
   return (
     <nav className="md:hidden fixed bottom-0 left-0 block w-screen">

@@ -10,12 +10,19 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
+    "classnames": "^2.2.6",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-redux": "^7.2.1",
     "react-router-dom": "^5.2.0",
     "react-scripts": "^3.4.3",
-    "styled-components": "^5.1.1"
+    "redux": "^4.0.5",
+    "redux-devtools-extension": "^2.13.8",
+    "redux-localstorage-simple": "^2.3.1",
+    "styled-components": "^5.1.1",
+    "tabler-icons": "^1.19.0",
+    "twin.macro": "^1.7.0"
   },
   "scripts": {
     "watch:tw": "postcss -w src/assets/styles/tailwind.scss -o src/assets/styles/index.scss",
@@ -52,5 +59,10 @@
     "sass": "^1.26.10",
     "tailwindcss": "^1.4.6",
     "typescript": "^3.9.6"
+  },
+  "babelMacros": {
+    "twin": {
+      "config": "src/tailwind.config.js"
+    }
   }
 }

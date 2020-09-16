@@ -2,7 +2,7 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import PropTypes from "prop-types";
 
-const Icon = ({ faIcon, faSize = "md" }) => {
+export const Icon = ({ faIcon, faSize = "1x" }) => {
   //rotation={90|180|270}, flip={horizontal|vertical|both}, spin, pulse, mask={[....]}, color
   return <FontAwesomeIcon icon={faIcon} size={faSize} />;
 };
@@ -13,7 +13,5 @@ Icon.propTypes = {
 };
 
 Icon.defaultProps = {
-  faSize: "md",
+  faSize: "1x",
 };
-
-export default Icon;
